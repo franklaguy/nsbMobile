@@ -1,3 +1,12 @@
-<header role="banner">
-	<div id="header"></div>
+<header data-role="header" data-theme="b" data-position="inline">
+	<select name="select-choice-1" data-theme="b" data-native-true="true" tabindex="-1">
+		<option value="<?=$this->baseUrl();?>">Home</option>
+		<option value="<?=$this->baseUrl();?>/profile">Company Profile</option>
+		<option value="<?=$this->baseUrl();?>/profile/marketing">Marketing Profile</option>
+		<option value="<?=$this->baseUrl();?>/curve">Staying Ahead of the Curve</option>
+		<option value="http://www.noveltysoundbytes.com/blogOsphere">blogOsphere</option>
+		<option value="<?=$this->baseUrl();?>/login">Admin</option>
+	</select>	
+	<h1>nSb Mobile</h1>
+	<a href="<?=$this->baseUrl();?>/login" data-icon="check" data-theme="b">Login</a>
 </header>

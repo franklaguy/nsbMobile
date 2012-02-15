@@ -1,16 +1,10 @@
-<nav role="navigation">
-	<div id="nav">
-		<ul>
-			<li><a href="<?=$this->baseUrl();?>">Home</a></li> 
-			<li><a href="<?=$this->baseUrl();?>/profile">Company Profile</a></li>
-			<li><a href="<?=$this->baseUrl();?>/profile/marketing">Marketing Profile</a></li>
-			<li><a href="<?=$this->baseUrl();?>/curve">Staying Ahead of the Curve</a></li>
-			<li><a href="http://www.noveltysoundbytes.com/blogOsphere">blogOsphere</a></li>
-			<li id="admin"><a href="<?=$this->baseUrl();?>/login">Admin</a></li>
-		</ul>
-		<div id="adminTab" style="display:none;"></div>
-	</div>
+<nav data-role="navigation" style="display:none;">
+	<ul data-role="listview" data-inset="true" data-dividertheme="a" data-theme="c">
+		<li><a href="<?=$this->baseUrl();?>">Home</a></li> 
+		<li><a href="<?=$this->baseUrl();?>/profile">Company Profile</a></li>
+		<li><a href="<?=$this->baseUrl();?>/profile/marketing">Marketing Profile</a></li>
+		<li><a href="<?=$this->baseUrl();?>/curve">Staying Ahead of the Curve</a></li>
+		<li><a href="http://www.noveltysoundbytes.com/blogOsphere">blogOsphere</a></li>
+		<li id="admin"><a href="<?=$this->baseUrl();?>/login">Admin</a></li>
+	</ul>
 </nav>
-<?php if(Zend_Auth::getInstance()->hasIdentity()){ // abort function if logged in ?>
-		<script type='text/javascript'>$(document).click(function LOGIN() { xhr.abort() });</script>
-<?php } ?>
