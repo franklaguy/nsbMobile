@@ -2,5 +2,12 @@
 /* Author: R. Lewis - Date: 1/12/12 - nSb web *******/
 /****************************************************/
 
+/* Reset ********************************************/
+body,section {padding:7px;}
 ul, menu, dir {list-style-type:none;}
-footer {font-size:9px;text-align:center;}
+h1,h2,h3,h4,h5,h6,p {margin:2px 0;}
+h1 {font:bold 18px trebuchet ms;}
+h2 {font:bold 14px trebuchet ms;}
+ul {margin:3px 7px 10px;padding:0;}
+body,p,ul,ul li,table {font:normal 13px trebuchet ms;}
+footer {font-size:9px !important;text-align:center;}

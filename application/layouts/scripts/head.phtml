@@ -5,11 +5,11 @@
 	echo $this->headMeta(); // load Meta data
 	echo $this->headTitle(); // load title
 	echo $this->headLink()->appendStylesheet(Zend_Controller_Front::getInstance()->getBaseUrl().'/cdn/css/curve.css') // load curve style
-												->appendStylesheet(Zend_Controller_Front::getInstance()->getBaseUrl().'/cdn/css/mobile.css') // load global style
+												->appendStylesheet('http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css') // load jQuery mobile style
 												->appendStylesheet(Zend_Controller_Front::getInstance()->getBaseUrl().'/cdn/css/screen.css'); // load custom style
 
 	// load jQuery
 	echo $this->headScript()->prependFile('http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'text/javascript'); 
-	echo $this->headScript()->prependFile('http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js', 'text/javascript'); 				
+	echo $this->headScript()->prependFile('http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js', 'text/javascript'); 				
 ?> 
 </head>
