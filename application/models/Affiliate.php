@@ -17,7 +17,7 @@ class Application_Model_Affiliate // named after folder models affiliate
     $group = ""; // set var
     $group .= "<ul class='group'>"; // concantonate var
 		foreach ($arr as $row){ // loop
-		  $group .= "<li> &bull; ".$row->company."</li>"; // call data
+		  $group .= "<li>".$row->company."</li>"; // call data
 		}
 		$group .= "</ul>";
 		return $group; // return data object

@@ -17,7 +17,7 @@ class Application_Model_Clients
 			foreach ($arr as $row){ // loop
 				$web = $row->web; // set var to column
 				if($web !== 'NULL'){ // if column is not null
-					$group .= "<li> &bull; ".$web."</li>"; // web column
+					$group .= "<li>".$web."</li>"; // web column
 				} 
 			}			
 			$group .= "</ul>"; // concatenate
@@ -35,7 +35,7 @@ class Application_Model_Clients
 			foreach ($arr as $row){ // loop
 				$tv = $row->tv;  // set var to column
 				if($tv !== 'NULL'){  // if column is not null
-					$group .= "<li> &bull; ".$tv."</li>"; // tv column
+					$group .= "<li>".$tv."</li>"; // tv column
 				}
 			}
 			$group .= "</ul>";
@@ -44,7 +44,7 @@ class Application_Model_Clients
 			foreach ($arr as $row){
 				$music = $row->music;  // music column
 				if($music !== 'NULL'){
-					$group .= "<li> &bull; ".$music."</li>";
+					$group .= "<li>".$music."</li>";
 				}
 			}
 			$group .= "</ul>";
