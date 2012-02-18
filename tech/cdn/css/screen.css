@@ -13,4 +13,4 @@ body,p,ul,ul li,table {font:normal 13px trebuchet ms;}
 footer {font-size:9px !important;text-align:center;}
 
 /* Dialog ********************************************/
-.ui-dialog .ui-header,.ui-dialog .ui-content, .ui-dialog .ui-footer {padding:0;}
+.ui-dialog .ui-header,.ui-dialog .ui-content, .ui-dialog .ui-footer {}
