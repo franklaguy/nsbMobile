@@ -22,5 +22,10 @@ class IndexController extends Zend_Controller_Action
         		//'base' => 'GLOBAL'
         		//), 3);
     }
+    
+    public function navAction()
+    {
+    	//
+    }
 
 }
