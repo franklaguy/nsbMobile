@@ -2,20 +2,18 @@
 /****************************************************/
 /* Curve ******************************************/
 /*********** scrollable ************/
-#main {position:relative;overflow:hidden;height:480px;}/* main vertical scroll */
+#main {position:relative;overflow:hidden;height:900px;}/* main vertical scroll */
 #pages {position:absolute;height:20000em;}/* root element for pages */
-.page {padding:10px;margin:3px;overflow: hidden;width:520px;
-	background-color:#333;border: thick outset;}/* single page */
-.scrollable {position:relative;overflow:hidden;width: 510px;height: 450px;}	/* root element for horizontal scrollables */
+.page {padding:10px;margin:3px;overflow: hidden;width:290px;}/* single page */
+.scrollable {position:relative;overflow:hidden;width: 280px;height:900px;}	/* root element for horizontal scrollables */
 .scrollable .items {width:20000em;position:absolute;clear:both;}/* root element for scrollable items */	
-.item {float:left;width:500px;height:450px;padding:10px;}	/* single scrollable item */
+.item {float:left;width:270px;height:900px;padding:10px;}	/* single scrollable item */
 .scrollable {float:left;}/* this makes it possible to add next button beside scrollable */
 
 /*********** navigator **************/
-#main_navi {float:left;border:inset;width:110px;background-image:url(../images/cage.gif);outline:0;margin-top:3px;}/* main navigator */
-ul#main_navi li {display:block;border-bottom: solid 1px #CCC;padding:2px;cursor:pointer;color:#ccc;}
-	ul#main_navi li:hover {color:#FAF7F8;}
-	ul#main_navi li.active {background-image:url(../images/metal.bmp);}
+#main_navi {outline:0;margin:3px auto;height:15px;width:100%;} /* main navigator */
+ul#main_navi li {display:block;padding:2px;cursor:pointer;float:left;text-decoration:underline;}
+ul#main_navi li.divider, ul#main_navi li.active {text-decoration:none;}
 .navi {margin:0 auto;width:200px;height:20px;} /* position and dimensions of the navigator */
 .navi a {width:8px;height:8px;float:left;margin:3px;display:block;font-size:1px;
 	background:url(http://static.flowplayer.org/tools/img/scrollable/arrow/navigator.png) 0 0 no-repeat;} /* items inside navigator */

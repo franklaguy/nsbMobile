@@ -6,11 +6,13 @@
 body,section {padding:7px;}
 ul, menu, dir {list-style-type:none;}
 h1,h2,h3,h4,h5,h6,p {margin:2px 0;}
-h1 {font:bold 18px trebuchet ms;}
+h1, legend {font:bold 18px trebuchet ms;}
 h2 {font:bold 14px trebuchet ms;}
 ul {margin:3px 7px 10px;padding:0;}
-body,p,ul,ul li,table {font:normal 13px trebuchet ms;}
+body,p,ul,ul li,table, label.ui-input-text {font:normal 13px trebuchet ms;}
 footer {font-size:9px !important;text-align:center;}
 
 /* Dialog ********************************************/
 .ui-dialog .ui-header,.ui-dialog .ui-content, .ui-dialog .ui-footer {}
+
+dt,dd {-webkit-margin-start: 2px;-webkit-margin-end: 2px;}
