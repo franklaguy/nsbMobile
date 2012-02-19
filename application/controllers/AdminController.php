@@ -1,8 +1,6 @@
 <?php
-
 class AdminController extends Zend_Controller_Action
 {
-
     public function init()
     {
         $layout = $this->_helper->layout();       // get layout helper
