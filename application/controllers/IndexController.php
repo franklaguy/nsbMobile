@@ -16,16 +16,13 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // below - updates database based on id
-        //$affiliate->updateAffiliate(array(
-        		//'company' => 'Zend Yellow Pages', 
-        		//'base' => 'GLOBAL'
-        		//), 3);
+        // 
     }
     
     public function navAction()
     {
-    	//
+    	$layout = $this->_helper->layout();
+    	$layout->disableLayout();
     }
 
 }

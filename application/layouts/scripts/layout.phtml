@@ -1,9 +1,13 @@
 <!-- application/layouts/scripts/layout.phtml -->
 
-<?php include_once 'head.phtml'; ?>
+<?php 
+	include_once 'head.phtml'; 
+	$id = array_pop(explode("/", $_SERVER["REQUEST_URI"]));
+	$dataURL = $_SERVER["REQUEST_URI"];
+?>
 
 	<body dir="ltr">
-		<section id="containerSection" data-role="page" class="ui-body-d">
+		<section id="<?=$id;?>" data-role="page" class="ui-body-d" data-url="<?=$dataURL;?>">
 			
 				<?php 
 					include_once 'header.phtml';

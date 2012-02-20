@@ -18,6 +18,6 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		$view->headTitle()->setSeparator(' - '); // Separate titles with this
 		$view->headTitle('Tech Stuffs by nSb web'); // Main title
 		
-		define('BASEURL', Zend_Controller_Front::getInstance()->getBaseUrl());
+		define('BASEURL', Zend_Controller_Front::getInstance()->getBaseUrl().'/nsbMobile/tech/');
 	}
 }
