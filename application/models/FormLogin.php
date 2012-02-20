@@ -84,7 +84,6 @@ class Application_Model_FormLogin extends Zend_Form // Model uses native Zend Fo
 			// Submit Begin
 			$submit = new Zend_Form_Element_Button('submit'); // new instance of submit element
 			$submit->setLabel('Login') 												// label name
-						 ->setAttrib('onClick', 'LOGIN();')					// jQuery login
 						 ->setAttrib('type', 'submit')							// set button type
 						 ->removeDecorator('DtDdWrapper'); 					// remove dt tags 
 			

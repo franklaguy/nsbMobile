@@ -19,5 +19,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		$view->headTitle('Tech Stuffs by nSb web'); // Main title
 		
 		define('BASEURL', Zend_Controller_Front::getInstance()->getBaseUrl().'/nsbMobile/tech/');
+		define('ID', array_pop(explode("/", $_SERVER["REQUEST_URI"])));
+		define('DATAURL', $_SERVER["REQUEST_URI"]);
 	}
 }

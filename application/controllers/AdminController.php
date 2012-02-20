@@ -16,14 +16,14 @@ class AdminController extends Zend_Controller_Action
         	$this->view->welcome = "<p>Hello ". ucfirst($identity)."</p>";    // welcome txt
         	$this->view->logout = "<p><a href='admin/logout'>log out</a></p>";// logout link to logout action
     		} else {
-    			$this->_redirect(BASEURL."login");																 // else redirect
+    			$this->_redirect("login");																 // else redirect
     		}
     }
 
     public function logoutAction()                  // logout page
     {
         Zend_Auth::getInstance()->clearIdentity();  // logout
-        $this->_redirect(BASEURL);									// redirect
+        $this->_redirect('/');									// redirect
     }
 
 

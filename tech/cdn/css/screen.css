@@ -15,4 +15,6 @@ footer {font-size:9px !important;text-align:center;}
 /* Dialog ********************************************/
 .ui-dialog .ui-header,.ui-dialog .ui-content, .ui-dialog .ui-footer {}
 
+
 dt,dd {-webkit-margin-start: 2px;-webkit-margin-end: 2px;}
+ul.errors {color:red;}
