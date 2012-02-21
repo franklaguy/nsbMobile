@@ -1,0 +1,56 @@
+
+<section id="html5.1" data-role="page" class="ui-body-d">
+	<header data-role="header" role="banner"><h1>nSb - HTML5</h1></header>
+	<section>
+		<?php include_once 'curveNav.phtml';?>
+		<img src="http://farm1.static.flickr.com/143/321464099_a7cfcb95cf.jpg" width=270 />
+		<p>Staying Ahead of the Curve</p>
+		<p><a href="#html5.2">HTML5 pt. 2</a></p>
+	</section>
+</section>
+<section id="html5.2" data-role="page" class="ui-body-d"> 
+	<?php include_once 'page2_html5/HTML5.phtml';?>
+	<a href="#html5.3">HTML5 pt. 3</a>
+</section> 
+<section id="html5.3" data-role="page" class="ui-body-d"> 
+	<?php include_once 'page2_html5/HTML5_2.phtml'; ?>
+	<a href="#funFacts">Fun Facts</a>
+</section>  
+<section id="funFacts" data-role="page" class="ui-body-d"> 
+	<?php include_once 'page2_html5/funFacts.phtml';?> 
+	<a href="#articles">Articles</a>
+</section> 
+<section id="articles" data-role="page" class="ui-body-d">
+	<?php include_once 'page2_html5/articles.phtml';?>
+	<a href="#aria">ARIA</a>
+</section> 
+<section id="aria" data-role="page" class="ui-body-d"> 
+		<?php include_once 'page2_html5/aria.phtml';?>
+	<a href="#roles">Roles</a>
+</section> 
+<section id="roles" data-role="page" class="ui-body-d"> 
+		<?php include_once 'page2_html5/roles.phtml';?>
+	<a href="#forms">Forms</a>
+</section> 
+<section id="forms" data-role="page" class="ui-body-d">
+		<?php include_once 'page2_html5/forms.phtml';?>
+	<a href="#semantic">Semantic</a>
+</section> 
+<section id="semantic" data-role="page" class="ui-body-d"> 
+		<?php include_once 'page2_html5/semantic.phtml';?>
+	<a href="#video">Video</a>
+</section> 
+<section id="video" data-role="page" class="ui-body-d"> 
+		<?php include_once 'page2_html5/video.phtml';?>
+	<a href="#html5.1">HTML5</a>
+</section>	
+
+	<div id="main" style="display:none;"> <!-- root element for the main scrollable --> 
+		<div id="pages"> <!-- root element for pages --> 
+	 		<?php include_once 'page3.phtml'; ?>	
+	 		<?php include_once 'page4.phtml'; ?>	
+	 	</div> 
+	</div>
+	
+</body>
+</html>

@@ -3,7 +3,7 @@
 /****************************************************/
 
 /* Reset ********************************************/
-body,section {padding:7px;}
+body,section,article {padding:7px;}
 ul, menu, dir {list-style-type:none;}
 h1,h2,h3,h4,h5,h6,p {margin:2px 0;}
 h1, legend {font:bold 18px trebuchet ms;}

@@ -3,9 +3,29 @@
 		
 		public function init() 
 		{
-			$this->view->adminLogin = "<script type='text/javascript'>$(document).click(function LOGIN() { xhr.abort() });</script>";
-		}		
-		public function indexAction() { }	
+			$layout = $this->_helper->layout();
+			$layout->setLayout('curve_layout');
+		}	
+			
+		public function indexAction() 
+		{ 
+			
+		}	
+		
+		public function html5Action()
+		{
+			
+		}
+		
+		public function css3Action()
+		{
+			
+		}
+		
+		public function jQueryAction()
+		{
+			
+		}
 		
 	}
 ?>

@@ -1,20 +1,24 @@
-<style>#leftPanel {display:none;}</style> <!-- Turn off left Rail - Remove for Framework format -->
-<section id="curve">
+
+<section id="curve" data-role="page" class="ui-body-d">
+	<header data-role="header" role="banner"><h1>the Curve</h1></header>
 <!-- main navigator - begin -->
-	<ul id="main_navi">   
-		<li class="active"><strong>the Curve</strong></li>  
-		<li><strong>HTML5</strong></li>
-		<li><strong>CSS3</strong></li>
-		<li><strong>jQuery</strong></li> 
+	<ul id="main_navi">  
+		<li class="active"><strong><a href="<?=BASEURL;?>curve">the Curve</a></strong> | </li>  
+		<li><strong><a href="<?=BASEURL;?>curve/html5">HTML5</a></strong> | </li>
+		<li><strong><a href="<?=BASEURL;?>curve/css3">CSS3</a></strong> | </li>
+		<li><strong><a href="<?=BASEURL;?>curve/jQuery">jQuery</a></strong></li>  
 	</ul> 
 <!-- main navigator - end -->	
+	<img src="http://farm1.static.flickr.com/114/299183878_4feac12b04.jpg" width=270 style="position: relative" />
+	<section id="curveWelcome">
+		<h2>Staying Ahead of the Curve</h2> 
+		<p>Welcome, this is an amalgam of samples, code snippets and need to knows in regards to best practices for Front-End coding.</p>
+		<p>The topics within are related to HTML5, CSS3 and jQuery.</p>
+		<p>It's a comprehensive approach to documenting current supported practices using these front-end technologies.
+			Basically, this is a one stop shop where I will be depositing new finds and updating coding techniques for my own use. 
+			If you find yourself here and learn something or are reminded of something useful then your welcome. 
+			If you care to chat about some of the topics written here and would like to discuss, shoot on over to the 
+			<b><a href="/blogosphere/">blogOsphere</a></b> and leave a comment. I'll open a thread just for those of you who are interested in doing so.</p>
+		<p class="sign">- R. Lewis, Developer</p> 
+	</section>
 </section>	
-	<div id="main"> <!-- root element for the main scrollable --> 
-		<div id="pages"> <!-- root element for pages --> 
-	 		<?php include_once 'page1.phtml'; ?>
-	 		<?php include_once 'page2.phtml'; ?>	
-	 		<?php include_once 'page3.phtml'; ?>	
-	 		<?php include_once 'page4.phtml'; ?>	
-	 	</div> 
-	</div>
-<?=$this->adminLogin;?>

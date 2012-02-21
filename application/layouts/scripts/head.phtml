@@ -9,7 +9,7 @@
 												->appendStylesheet(Zend_Controller_Front::getInstance()->getBaseUrl().'/cdn/css/screen.css'); // load custom style
 
 	// load jQuery
-	echo $this->headScript()->prependFile('http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'text/javascript'); 
-	echo $this->headScript()->prependFile('http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js', 'text/javascript'); 				
+	echo $this->headScript()->prependFile('http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js', 'text/javascript')
+													->prependFile('http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js', 'text/javascript'); 				
 ?> 
 </head>

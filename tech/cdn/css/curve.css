@@ -11,8 +11,8 @@
 .scrollable {float:left;}/* this makes it possible to add next button beside scrollable */
 
 /*********** navigator **************/
-#main_navi {outline:0;margin:3px auto;height:15px;width:100%;} /* main navigator */
-ul#main_navi li {display:block;padding:2px;cursor:pointer;float:left;text-decoration:underline;}
+#main_navi {outline:0;margin:3px auto;height:20px;width:100%;} /* main navigator */
+ul#main_navi li {display:block;padding:2px;cursor:pointer;float:left;}
 ul#main_navi li.divider, ul#main_navi li.active {text-decoration:none;}
 .navi {margin:0 auto;width:200px;height:20px;} /* position and dimensions of the navigator */
 .navi a {width:8px;height:8px;float:left;margin:3px;display:block;font-size:1px;
