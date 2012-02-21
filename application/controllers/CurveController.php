@@ -22,7 +22,7 @@
 			
 		}
 		
-		public function jQueryAction()
+		public function jqueryAction()
 		{
 			
 		}
