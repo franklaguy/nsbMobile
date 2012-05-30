@@ -93,7 +93,7 @@ class Mobile_Detect
 
 $detect = new Mobile_Detect();
 
-if ($detect->isMobile()){
+if ($detect->isMobile() && $detect->isMobile('iPad')){
 	header ("Location: http://mobile.noveltysoundbytes.com/tech/");
 } else {
 	header ("Location: http://www.noveltysoundbytes.com/tech/");
