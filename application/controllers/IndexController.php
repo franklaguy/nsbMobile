@@ -24,5 +24,11 @@ class IndexController extends Zend_Controller_Action
     	$layout = $this->_helper->layout();
     	$layout->disableLayout();
     }
+    
+    public function adnavAction()
+    {
+    	$layout = $this->_helper->layout();
+    	$layout->disableLayout();
+    }
 
 }
