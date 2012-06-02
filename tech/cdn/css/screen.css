@@ -7,14 +7,25 @@ body,section,article {padding:7px;}
 ul, menu, dir {list-style-type:none;}
 h1,h2,h3,h4,h5,h6,p {margin:2px 0;}
 h1, legend {font:bold 18px trebuchet ms;}
+legend {padding:0 0 10px;}
 h2 {font:bold 14px trebuchet ms;}
 ul {margin:3px 7px 10px;padding:0;}
 body,p,ul,ul li,table, label.ui-input-text {font:normal 13px trebuchet ms;}
-footer {font-size:9px !important;text-align:center;}
+footer {text-align:center;padding:7px 0;}
+ul.errors {color:red;}
 
 /* Dialog ********************************************/
-.ui-dialog .ui-header,.ui-dialog .ui-content, .ui-dialog .ui-footer {}
+.ui-content .ui-listview {margin: 0 -15px 15px;}
 
 
 dt,dd {-webkit-margin-start: 2px;-webkit-margin-end: 2px;}
-ul.errors {color:red;}
+#username-label,#password-label {width:7%;float:left;}
+	#password-label {padding-left:3%;}
+#username-element,#password-element {width:25%;float:left;margin-left:0;}
+#login .ui-btn-block {width:20%;margin:3px 5% 0;float:left;}
+
+/* Header ********************************************/
+.ui-header .ui-title {overflow:visible !important;}
+.headerMenuButton {border:none;right:17px;}
+.headerMenuButton .ui-btn-inner {padding:13px 10px !important;position:absolute;right:0;top: 2px;}
+
