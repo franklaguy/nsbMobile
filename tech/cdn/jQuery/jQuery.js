@@ -26,6 +26,8 @@ var ADMINTAB = {					// namespace
 		}
 }
 
+$("#employersList button").click(function(){$("#employers").toggle();});
+
 $('li#admin a').live('click', function(e){	// click admin tab
 	ADMINTAB.load();						// load namespace function
 	e.preventDefault();						// override href

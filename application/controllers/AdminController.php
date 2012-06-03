@@ -15,6 +15,10 @@ class AdminController extends Zend_Controller_Action
     			$identity = $auth->getIdentity();																	// get identity from storage
         	$this->view->welcome = "<p>Hello ". ucfirst($identity)."</p>";    // welcome txt
         	$this->view->logout = "<p><a href='admin/logout'>log out</a></p>";// logout link to logout action
+        	
+        	$employers = new Application_Model_Employers();
+        	$this->view->allEmployers = $employers->allEmployers();
+        	
     		} else {
     			$this->_redirect("login");																 // else redirect
     		}

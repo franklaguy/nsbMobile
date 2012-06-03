@@ -13,6 +13,7 @@ ul {margin:3px 7px 10px;padding:0;}
 body,p,ul,ul li,table, label.ui-input-text {font:normal 13px trebuchet ms;}
 footer {text-align:center;padding:7px 0;}
 ul.errors {color:red;}
+.list li:nth-of-type(odd) {background:#cacaca;}
 
 /* Dialog ********************************************/
 .ui-content .ui-listview {margin: 0 -15px 15px;}
@@ -28,4 +29,10 @@ dt,dd {-webkit-margin-start: 2px;-webkit-margin-end: 2px;}
 .ui-header .ui-title {overflow:visible !important;}
 .headerMenuButton {border:none;right:17px;}
 .headerMenuButton .ui-btn-inner {padding:13px 10px !important;position:absolute;right:0;top: 2px;}
+
+/* Admin  ********************************************/
+.adminWelcome {position:absolute;top:10px;z-index:111111;right:80px;color:#ffffff;text-shadow:none;}
+#employersList,#developersList {width:17%;float:left;}
+#employers {display:none;clear:both;}
+	#employers li {padding:7px;border-radius:5px;}
 
